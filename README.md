@@ -4,10 +4,12 @@
 
  This shortcut was made by [u/Disastrous_Ear9618](https://www.reddit.com/user/Disastrous_Ear9618) and [u/Alive-Opinion-5453](https://www.reddit.com/user/Alive-Opinion-5453). 
 
-***⚠️!!!WARNING!!!⚠️
-USE THIS SHORTCUT AT YOUR OWN RISK.
-I AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. 
-⚠️!!!WARNING!!!⚠️***
+***⚠️!!!WARNING!!!⚠️***
+
+**USE THIS SHORTCUT AT YOUR OWN RISK.
+I AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS.**
+
+***⚠️!!!WARNING!!!⚠️***
 
 ## How it works?
  First shortcut unzip ipa file, than checks if "mussel" file inside.
