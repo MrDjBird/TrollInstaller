@@ -1,0 +1,373 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 59693
+   },
+   "WFWorkflowClientVersion": "1505.1",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorAskForInput",
+      "Parameters": {
+         "ItemClass": "WFGenericFileContentItem"
+      }
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "This shortcut was made by \nu/Disastrous_Ear9618 \nand \nu/Alive-Opinion-5453. \nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.3.1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "Type": "ExtensionInput",
+                     "Aggrandizements": [
+                        {
+                           "Type": "WFCoercionVariableAggrandizement",
+                           "CoercionItemClass": "WFStringContentItem"
+                        }
+                     ]
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFConditionalActionString": "http",
+            "GroupingIdentifier": "9BDBFA00-1F13-4F40-80CA-534B6DDA5322",
+            "WFCondition": 8
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ExtensionInput"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "BFDA093E-A39D-4DE9-B4A6-14D89144B8F4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "BFDA093E-A39D-4DE9-B4A6-14D89144B8F4",
+                  "Type": "ActionOutput",
+                  "OutputName": "Вміст URL-адреси"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "File"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "9BDBFA00-1F13-4F40-80CA-534B6DDA5322",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "File"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "9BDBFA00-1F13-4F40-80CA-534B6DDA5322",
+            "UUID": "69C72128-AE38-4CF7-A394-FE22111109C1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "VariableName": "File",
+                     "Type": "Variable",
+                     "Aggrandizements": [
+                        {
+                           "PropertyUserInfo": "WFFileExtensionProperty",
+                           "Type": "WFPropertyVariableAggrandizement",
+                           "PropertyName": "File Extension"
+                        }
+                     ]
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFConditionalActionString": "ipa",
+            "GroupingIdentifier": "674E0FF6-2B24-4CB6-8B8E-CC35173E50F7",
+            "WFCondition": 9
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+         "WFWorkflowActionParameters": {
+            "UUID": "D99269F0-6601-4B9B-B4B4-57AF2DD04B4E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "674E0FF6-2B24-4CB6-8B8E-CC35173E50F7",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": "Invalid file"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "674E0FF6-2B24-4CB6-8B8E-CC35173E50F7",
+            "UUID": "5BA29B6A-99E5-4123-BF0E-D3FC0E1F4419"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.unzip",
+         "WFWorkflowActionParameters": {
+            "WFArchive": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "9C6672CB-D68F-49B5-988D-FB823E19FAF7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "Value": {
+                  "OutputUUID": "9C6672CB-D68F-49B5-988D-FB823E19FAF7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Файли"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B0E4986C-7C7B-40F9-9B73-5CD16D54588C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+         "WFWorkflowActionParameters": {
+            "WFMatchTextPattern": "(mussel) |(<key>CFBundleBase64Hash</key>)",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "B0E4986C-7C7B-40F9-9B73-5CD16D54588C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст папки"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "43C390ED-F88D-485A-B8AD-FE764299924B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "43C390ED-F88D-485A-B8AD-FE764299924B",
+                     "Type": "ActionOutput",
+                     "OutputName": "Kết quả"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "0F12FD03-D654-49C0-91A2-BAA210A42B19",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionMessage": "💀⚠️Seashell malware detected⚠️💀"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
+            "WFMenuItems": [
+               "Install anyway ",
+               "Stop command"
+            ],
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Install anyway ",
+            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Prompt": "Type “INSTALLANYWAY” to accept all risks related with installation of this ipa",
+                        "Type": "Ask"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "E7571F5A-01DE-4960-8FA4-6C9FAD0D4306"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "E7571F5A-01DE-4960-8FA4-6C9FAD0D4306",
+                     "Type": "ActionOutput",
+                     "OutputName": "Текст"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFConditionalActionString": "INSTALLANYWAY",
+            "GroupingIdentifier": "C6A36989-E6AF-4AD3-8304-67361CD6923A",
+            "WFCondition": 4
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+         "WFWorkflowActionParameters": {
+            "UUID": "35055220-2136-481E-9C85-9349603CBAD3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "C6A36989-E6AF-4AD3-8304-67361CD6923A",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "C6A36989-E6AF-4AD3-8304-67361CD6923A",
+            "WFControlFlowMode": 2
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Stop command",
+            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
+            "UUID": "7BC3F977-2E2B-4DCD-84F3-B084005C755B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "0F12FD03-D654-49C0-91A2-BAA210A42B19",
+            "UUID": "1D467EDB-A034-4506-8379-BEEB95A5E6F2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openin",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "File",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFSelectedApp": {
+               "BundleIdentifier": "com.opa334.TrollStore",
+               "Name": "TrollStore",
+               "TeamIdentifier": "0000000000"
+            },
+            "WFOpenInAppIdentifier": "com.opa334.TrollStore"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFGenericFileContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "Watch",
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
