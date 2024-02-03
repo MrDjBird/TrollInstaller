@@ -22,3 +22,6 @@ I AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS.**
  - ~~Install anyway option~~
  - IP pulling
  - Shortcut settings
+ - TrollStore URL Scheme
+ - IPA sandboxing
+ - SeaShell disabling
