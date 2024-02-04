@@ -19,7 +19,545 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
          "WFWorkflowActionParameters": {
-            "WFCommentActionText": "This shortcut was made by \nu/Disastrous_Ear9618 \nand \nu/Alive-Opinion-5453. \nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.4.8"
+            "WFCommentActionText": "This shortcut was made by \nMrDJBird ♡ u/Disastrous_Ear9618\nand \nHùng Anhh ♡ t.me/sadendins\nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": "data:text/html,<script>document.write(navigator.language);</script>",
+            "UUID": "74F4715A-1E88-4AC9-97B0-2C3B2F87C899"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getwebpagecontents",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "74F4715A-1E88-4AC9-97B0-2C3B2F87C899",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+         "WFWorkflowActionParameters": {
+            "WFMatchTextPattern": "(uk-UA)|❤️|(vi-VN)",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "86AF99E4-9C23-498B-92CB-BF7E44DD52D1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "86AF99E4-9C23-498B-92CB-BF7E44DD52D1",
+                     "Type": "ActionOutput",
+                     "OutputName": "Kết quả"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "UUID": "3C13740A-C2B2-4152-8F20-73456E3F56B3",
+            "GroupingIdentifier": "5854C464-FF6E-4507-A597-EA240EA7B0E8",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 1,
+                        "WFKey": {
+                           "Value": {
+                              "string": "uk-UA"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "Value": {
+                                 "WFDictionaryFieldValueItems": [
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "newupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Є нове оновлення!Хочете встановити?"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "yesupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Так, звісно✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noprefer"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Ні, зберегти мою версію❌"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "important"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Ваша версія потребує оновлення⬆️"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "seashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "⛔️Виявлено зловмисне програмне забезпечення Seashell⛔️"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "installanyway"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Встановити в будь якому разі💀"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "close"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Закрити ❌ "
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noseashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "✅Seashell не виявлено ✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    }
+                                 ]
+                              },
+                              "WFSerializationType": "WFDictionaryFieldValue"
+                           },
+                           "WFSerializationType": "WFDictionaryFieldValue"
+                        }
+                     },
+                     {
+                        "WFItemType": 1,
+                        "WFKey": {
+                           "Value": {
+                              "string": "vi-VN"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "Value": {
+                                 "WFDictionaryFieldValueItems": [
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "newupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Có phiên bản mới ! Bạn có muốn cập nhật không ? "
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "yesupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Có, chắc chắn rồi ✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noprefer"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Không, giữ phiên bản này ❌"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "important"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Bản cập nhật quan trọng"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "seashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "⛔️ Đã phát hiện phần mềm độc hại Seashell ⛔️"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "installanyway"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Vẫn cài đặt 💀"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "close"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Đóng ❌"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noseashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "✅ Không phát hiện phần mềm độc hại Seashell ✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    }
+                                 ]
+                              },
+                              "WFSerializationType": "WFDictionaryFieldValue"
+                           },
+                           "WFSerializationType": "WFDictionaryFieldValue"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "2CE87FB4-18CF-4969-8F0A-D7F0639C863E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "5854C464-FF6E-4507-A597-EA240EA7B0E8",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 1,
+                        "WFKey": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Вміст вебсторінки",
+                                    "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFCoercionVariableAggrandizement",
+                                          "CoercionItemClass": "WFStringContentItem"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "Value": {
+                                 "WFDictionaryFieldValueItems": [
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "newupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "New update available. Update?"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "yesupdate"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Yes, sure✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noprefer"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "No, I prefer my version❌"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "important"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Very important update needed"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "seashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "💀⚠️Seashell malware detected⚠️💀"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "installanyway"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Install anyway 💀"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "close"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "Close ❌"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    },
+                                    {
+                                       "WFItemType": 0,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "noseashell"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "string": "✅ Seashell malware was not detected ✅"
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       }
+                                    }
+                                 ]
+                              },
+                              "WFSerializationType": "WFDictionaryFieldValue"
+                           },
+                           "WFSerializationType": "WFDictionaryFieldValue"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "85C5F474-0AB9-4815-98E9-3C713F5DCB8C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "5854C464-FF6E-4507-A597-EA240EA7B0E8",
+            "UUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF"
          }
       },
       {
@@ -45,7 +583,7 @@
                         },
                         "WFValue": {
                            "Value": {
-                              "string": "000408"
+                              "string": "000500"
                            },
                            "WFSerializationType": "WFTextTokenString"
                         }
@@ -101,7 +639,7 @@
                "Value": {
                   "OutputUUID": "6B7624A1-0F38-4A92-88AD-A932637FAD6C",
                   "Type": "ActionOutput",
-                  "OutputName": "Словник"
+                  "OutputName": "Từ điển"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
@@ -575,13 +1113,160 @@
          }
       },
       {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "newupdate",
+            "UUID": "41E09FDE-8748-4845-8732-09DC2BF84220",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.newupdate",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "yesupdate",
+            "UUID": "64FD870F-D36C-4CFD-9780-197884ECEFFA",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.yesupdate",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "noprefer",
+            "UUID": "389BB202-FE2C-4279-849D-FC70CB7B39C4",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.noprefer",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuPrompt": "New update available. Update?",
+            "WFMenuPrompt": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "41E09FDE-8748-4845-8732-09DC2BF84220",
+                        "Type": "ActionOutput",
+                        "OutputName": "newupdate"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
             "WFControlFlowMode": 0,
             "WFMenuItems": [
-               "Yes, sure✅",
-               "No, I prefer my version❌"
+               {
+                  "WFItemType": 0,
+                  "WFValue": {
+                     "Value": {
+                        "string": "\uFFFC",
+                        "attachmentsByRange": {
+                           "{0, 1}": {
+                              "OutputUUID": "64FD870F-D36C-4CFD-9780-197884ECEFFA",
+                              "Type": "ActionOutput",
+                              "OutputName": "yesupdate"
+                           }
+                        }
+                     },
+                     "WFSerializationType": "WFTextTokenString"
+                  }
+               },
+               {
+                  "WFItemType": 0,
+                  "WFValue": {
+                     "Value": {
+                        "string": "\uFFFC",
+                        "attachmentsByRange": {
+                           "{0, 1}": {
+                              "OutputUUID": "389BB202-FE2C-4279-849D-FC70CB7B39C4",
+                              "Type": "ActionOutput",
+                              "OutputName": "noprefer"
+                           }
+                        }
+                     },
+                     "WFSerializationType": "WFTextTokenString"
+                  }
+               }
             ],
             "GroupingIdentifier": "831CD95D-CC89-450F-A031-C1543D82683A"
          }
@@ -589,9 +1274,19 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuItemTitle": "Yes, sure✅",
+            "WFControlFlowMode": 1,
+            "WFMenuItemAttributedTitle": {
+               "string": "\uFFFC",
+               "attachmentsByRange": {
+                  "{0, 1}": {
+                     "OutputUUID": "64FD870F-D36C-4CFD-9780-197884ECEFFA",
+                     "Type": "ActionOutput",
+                     "OutputName": "yesupdate"
+                  }
+               }
+            },
             "GroupingIdentifier": "831CD95D-CC89-450F-A031-C1543D82683A",
-            "WFControlFlowMode": 1
+            "WFMenuItemTitle": "yesupdate"
          }
       },
       {
@@ -616,9 +1311,19 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuItemTitle": "No, I prefer my version❌",
+            "WFControlFlowMode": 1,
+            "WFMenuItemAttributedTitle": {
+               "string": "\uFFFC",
+               "attachmentsByRange": {
+                  "{0, 1}": {
+                     "OutputUUID": "389BB202-FE2C-4279-849D-FC70CB7B39C4",
+                     "Type": "ActionOutput",
+                     "OutputName": "noprefer"
+                  }
+               }
+            },
             "GroupingIdentifier": "831CD95D-CC89-450F-A031-C1543D82683A",
-            "WFControlFlowMode": 1
+            "WFMenuItemTitle": "noprefer"
          }
       },
       {
@@ -664,9 +1369,56 @@
          }
       },
       {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "important",
+            "UUID": "AA6A8B49-CB88-4A6D-AFE1-8B072812D464",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.important",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
          "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
          "WFWorkflowActionParameters": {
-            "Text": "Very important update needed"
+            "Text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "AA6A8B49-CB88-4A6D-AFE1-8B072812D464",
+                        "Type": "ActionOutput",
+                        "OutputName": "important"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
          }
       },
       {
@@ -963,7 +1715,7 @@
                "Value": {
                   "OutputUUID": "B0E4986C-7C7B-40F9-9B73-5CD16D54588C",
                   "Type": "ActionOutput",
-                  "OutputName": "Вміст папки"
+                  "OutputName": "Nội dung của thư mục"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
@@ -994,7 +1746,7 @@
                   "Value": {
                      "OutputUUID": "DC116420-C6EE-46F5-A5A1-D2193410EB25",
                      "Type": "ActionOutput",
-                     "OutputName": "Назва"
+                     "OutputName": "Tên"
                   },
                   "WFSerializationType": "WFTextTokenAttachment"
                }
@@ -1057,14 +1809,24 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
          "WFWorkflowActionParameters": {
-            "WFMatchTextPattern": "<key>CFBundleBase64Hash</key>",
+            "WFMatchTextPattern": "CFBundleBase64Hash",
             "text": {
                "Value": {
                   "string": "\uFFFC",
                   "attachmentsByRange": {
                      "{0, 1}": {
                         "VariableName": "Repeat Item 2",
-                        "Type": "Variable"
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFDictionaryContentItem"
+                           },
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Keys"
+                           }
+                        ]
                      }
                   }
                },
@@ -1080,15 +1842,9 @@
                "Type": "Variable",
                "Variable": {
                   "Value": {
-                     "Type": "ActionOutput",
-                     "OutputName": "Збіги",
                      "OutputUUID": "F6359948-17A6-4EF9-957F-C9C6FBFE0755",
-                     "Aggrandizements": [
-                        {
-                           "Type": "WFPropertyVariableAggrandizement",
-                           "PropertyName": "pattern"
-                        }
-                     ]
+                     "Type": "ActionOutput",
+                     "OutputName": "Збіги"
                   },
                   "WFSerializationType": "WFTextTokenAttachment"
                }
@@ -1105,8 +1861,9 @@
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "VariableName": "Repeat Item 2",
-                  "Type": "Variable"
+                  "OutputUUID": "F6359948-17A6-4EF9-957F-C9C6FBFE0755",
+                  "Type": "ActionOutput",
+                  "OutputName": "Збіги"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
@@ -1125,24 +1882,6 @@
          "WFWorkflowActionParameters": {
             "GroupingIdentifier": "8A821347-2799-4FA6-AF74-85C53910E1AC",
             "WFControlFlowMode": 2
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
-         "WFWorkflowActionParameters": {
-            "WFCommentActionText": {
-               "Value": {
-                  "string": "If we have more material about Seashell in the future, please add it here\n\n\"If \uFFFC is something\nThen ...... etc\"\n\nthe \"get the name of the file\" command will correctly detect the correct file we are looking for, without reading a lot of data",
-                  "attachmentsByRange": {
-                     "{79, 1}": {
-                        "OutputUUID": "DC116420-C6EE-46F5-A5A1-D2193410EB25",
-                        "Type": "ActionOutput",
-                        "OutputName": "Назва"
-                     }
-                  }
-               },
-               "WFSerializationType": "WFTextTokenString"
-            }
          }
       },
       {
@@ -1188,13 +1927,160 @@
          }
       },
       {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "seashell",
+            "UUID": "D3A55EF3-77C8-42B4-BBEB-8876A777D158",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.seashell",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "installanyway",
+            "UUID": "822934DF-F21C-4E36-9560-253AAEEB3B04",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.installanyway",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "close",
+            "UUID": "867BB022-CAF5-4B3D-AB89-DAE9DC226B4C",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.close",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuPrompt": "💀⚠️Seashell malware detected⚠️💀",
+            "WFMenuPrompt": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "D3A55EF3-77C8-42B4-BBEB-8876A777D158",
+                        "Type": "ActionOutput",
+                        "OutputName": "seashell"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
             "WFControlFlowMode": 0,
             "WFMenuItems": [
-               "Install anyway 💀",
-               "Close ❌"
+               {
+                  "WFItemType": 0,
+                  "WFValue": {
+                     "Value": {
+                        "string": "\uFFFC",
+                        "attachmentsByRange": {
+                           "{0, 1}": {
+                              "OutputUUID": "822934DF-F21C-4E36-9560-253AAEEB3B04",
+                              "Type": "ActionOutput",
+                              "OutputName": "installanyway"
+                           }
+                        }
+                     },
+                     "WFSerializationType": "WFTextTokenString"
+                  }
+               },
+               {
+                  "WFItemType": 0,
+                  "WFValue": {
+                     "Value": {
+                        "string": "\uFFFC",
+                        "attachmentsByRange": {
+                           "{0, 1}": {
+                              "OutputUUID": "867BB022-CAF5-4B3D-AB89-DAE9DC226B4C",
+                              "Type": "ActionOutput",
+                              "OutputName": "close"
+                           }
+                        }
+                     },
+                     "WFSerializationType": "WFTextTokenString"
+                  }
+               }
             ],
             "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF"
          }
@@ -1202,79 +2088,41 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuItemTitle": "Install anyway 💀",
-            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
-            "WFControlFlowMode": 1
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-         "WFWorkflowActionParameters": {
-            "WFTextActionText": "INSTALLANYWAY",
-            "UUID": "0442C6B8-82B4-4334-ABDD-0178716ED4AF"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "WFInput": {
-               "Type": "Variable",
-               "Variable": {
-                  "Value": {
-                     "OutputUUID": "0442C6B8-82B4-4334-ABDD-0178716ED4AF",
+            "WFControlFlowMode": 1,
+            "WFMenuItemAttributedTitle": {
+               "string": "\uFFFC",
+               "attachmentsByRange": {
+                  "{0, 1}": {
+                     "OutputUUID": "822934DF-F21C-4E36-9560-253AAEEB3B04",
                      "Type": "ActionOutput",
-                     "OutputName": "Текст"
-                  },
-                  "WFSerializationType": "WFTextTokenAttachment"
+                     "OutputName": "installanyway"
+                  }
                }
             },
-            "WFControlFlowMode": 0,
-            "WFConditionalActionString": {
-               "Value": {
-                  "string": "\uFFFC",
-                  "attachmentsByRange": {
-                     "{0, 1}": {
-                        "Type": "Ask"
-                     }
-                  }
-               },
-               "WFSerializationType": "WFTextTokenString"
-            },
-            "GroupingIdentifier": "0CBB527B-D510-45D4-8B0D-6AA283FC9DDA",
-            "WFCondition": 4
+            "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
+            "WFMenuItemTitle": "installanyway"
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.openin",
-         "WFWorkflowActionParameters": {
-            "WFInput": {
-               "Value": {
-                  "VariableName": "File",
-                  "Type": "Variable"
-               },
-               "WFSerializationType": "WFTextTokenAttachment"
-            },
-            "WFSelectedApp": {
-               "BundleIdentifier": "com.opa334.TrollStore",
-               "Name": "TrollStore",
-               "TeamIdentifier": "0000000000"
-            },
-            "WFOpenInAppIdentifier": "com.opa334.TrollStore"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "GroupingIdentifier": "0CBB527B-D510-45D4-8B0D-6AA283FC9DDA",
-            "WFControlFlowMode": 2
-         }
+         "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+         "WFWorkflowActionParameters": {}
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
          "WFWorkflowActionParameters": {
-            "WFMenuItemTitle": "Close ❌",
+            "WFControlFlowMode": 1,
+            "WFMenuItemAttributedTitle": {
+               "string": "\uFFFC",
+               "attachmentsByRange": {
+                  "{0, 1}": {
+                     "OutputUUID": "867BB022-CAF5-4B3D-AB89-DAE9DC226B4C",
+                     "Type": "ActionOutput",
+                     "OutputName": "close"
+                  }
+               }
+            },
             "GroupingIdentifier": "3D6BB0E3-BA20-428D-93D4-BDF140D2D7BF",
-            "WFControlFlowMode": 1
+            "WFMenuItemTitle": "close"
          }
       },
       {
@@ -1290,8 +2138,66 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
-         "WFWorkflowActionParameters": {}
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "0F12FD03-D654-49C0-91A2-BAA210A42B19",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B4F922FE-C2E2-4082-8604-F69D65DFE7CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Nếu kết quả"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "noseashell",
+            "UUID": "3D5A43E7-E431-4FC0-9F22-F447ECDFAC03",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": {
+               "Value": {
+                  "string": "\uFFFC.noseashell",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Вміст вебсторінки",
+                        "OutputUUID": "6A5A268E-84BD-4C29-9CD8-D55C8E9B36B8",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFStringContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionCancelButtonShown": false,
+            "WFAlertActionMessage": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "3D5A43E7-E431-4FC0-9F22-F447ECDFAC03",
+                        "Type": "ActionOutput",
+                        "OutputName": "noseashell"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFAlertActionTitle": "IPA safe"
+         }
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
@@ -1299,14 +2205,6 @@
             "WFControlFlowMode": 2,
             "GroupingIdentifier": "0F12FD03-D654-49C0-91A2-BAA210A42B19",
             "UUID": "1D467EDB-A034-4506-8379-BEEB95A5E6F2"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
-         "WFWorkflowActionParameters": {
-            "WFAlertActionCancelButtonShown": false,
-            "WFAlertActionMessage": "✅ Seashell malware was not detected ✅",
-            "WFAlertActionTitle": "IPA safe"
          }
       },
       {
@@ -1335,8 +2233,8 @@
    "WFWorkflowImportQuestions": [],
    "WFQuickActionSurfaces": [],
    "WFWorkflowTypes": [
-      "Watch",
-      "ActionExtension"
+      "ActionExtension",
+      "Watch"
    ],
    "WFWorkflowHasShortcutInputVariables": true
 }
