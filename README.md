@@ -1,7 +1,7 @@
 # TrollInstaller
  **More safely .ipa and .tipa installation with TrollStore 2**
  
- [Install latest v0.5](https://www.icloud.com/shortcuts/f9a5ec9258304d3fba3766c1b0144ffc)
+ [Install latest v0.5.2](https://www.icloud.com/shortcuts/d1ba1f2bd3064c11b81b5d26024aa354)
 
  This shortcut was made by [u/Disastrous_Ear9618](https://www.reddit.com/user/Disastrous_Ear9618) and [u/Alive-Opinion-5453](https://www.reddit.com/user/Alive-Opinion-5453). 
 

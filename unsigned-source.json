@@ -19,7 +19,7 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
          "WFWorkflowActionParameters": {
-            "WFCommentActionText": "This shortcut was made by \nMrDJBird ♡ u/Disastrous_Ear9618\nand \nHùng Anhh ♡ t.me/sadendins\nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.5"
+            "WFCommentActionText": "This shortcut was made by \nMrDJBird ♡ u/Disastrous_Ear9618\nand \nHùng Anhh ♡ t.me/sadendins\nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.5.2"
          }
       },
       {
@@ -583,7 +583,7 @@
                         },
                         "WFValue": {
                            "Value": {
-                              "string": "000500"
+                              "string": "000502"
                            },
                            "WFSerializationType": "WFTextTokenString"
                         }
@@ -1655,44 +1655,36 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
          "WFWorkflowActionParameters": {
-            "WFInput": {
+            "WFContentItemInputParameter": {
                "Value": {
                   "OutputUUID": "9C6672CB-D68F-49B5-988D-FB823E19FAF7",
                   "Type": "ActionOutput",
-                  "OutputName": "Файли"
+                  "OutputName": "Tệp"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
-            "GroupingIdentifier": "DD7667EB-2A44-4AED-A648-5990EA32109D",
-            "WFControlFlowMode": 0
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "WFInput": {
-               "Type": "Variable",
-               "Variable": {
-                  "Value": {
-                     "VariableName": "Repeat Item",
-                     "Type": "Variable",
-                     "Aggrandizements": [
-                        {
-                           "PropertyUserInfo": "WFFileExtensionProperty",
-                           "Type": "WFPropertyVariableAggrandizement",
-                           "PropertyName": "File Extension"
-                        }
-                     ]
-                  },
-                  "WFSerializationType": "WFTextTokenAttachment"
-               }
-            },
-            "WFControlFlowMode": 0,
-            "WFConditionalActionString": "app",
-            "GroupingIdentifier": "2A15D957-B372-45EA-8FF4-DDA74B999DF8",
-            "WFCondition": 4
+            "WFContentItemLimitEnabled": false,
+            "UUID": "B5FDE886-BB35-4BA5-8B37-D5CD6980BDD3",
+            "WFContentItemFilter": {
+               "Value": {
+                  "WFActionParameterFilterPrefix": 1,
+                  "WFContentPredicateBoundedDate": false,
+                  "WFActionParameterFilterTemplates": [
+                     {
+                        "Operator": 4,
+                        "Values": {
+                           "Unit": 4,
+                           "String": "app"
+                        },
+                        "Removable": true,
+                        "Property": "File Extension"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFContentPredicateTableTemplate"
+            }
          }
       },
       {
@@ -1700,41 +1692,73 @@
          "WFWorkflowActionParameters": {
             "WFFolder": {
                "Value": {
-                  "VariableName": "Repeat Item",
-                  "Type": "Variable"
+                  "OutputUUID": "B5FDE886-BB35-4BA5-8B37-D5CD6980BDD3",
+                  "Type": "ActionOutput",
+                  "OutputName": "Файли"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
-            "UUID": "B0E4986C-7C7B-40F9-9B73-5CD16D54588C"
+            "UUID": "5DB601AB-9094-45A4-8716-4D504582248F"
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
          "WFWorkflowActionParameters": {
-            "WFInput": {
+            "WFContentItemFilter": {
                "Value": {
-                  "OutputUUID": "B0E4986C-7C7B-40F9-9B73-5CD16D54588C",
+                  "WFActionParameterFilterPrefix": 0,
+                  "WFContentPredicateBoundedDate": false,
+                  "WFActionParameterFilterTemplates": [
+                     {
+                        "Operator": 4,
+                        "Values": {
+                           "Unit": 4,
+                           "String": "mussel"
+                        },
+                        "Removable": true,
+                        "Property": "Name"
+                     },
+                     {
+                        "Operator": 4,
+                        "Values": {
+                           "Unit": 4,
+                           "String": "plist"
+                        },
+                        "Removable": true,
+                        "Property": "File Extension"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFContentPredicateTableTemplate"
+            },
+            "WFContentItemSortOrder": "A to Z",
+            "UUID": "28BB829D-E591-44AF-BAA3-422D5312AAFF",
+            "WFContentItemLimitNumber": 1,
+            "WFContentItemInputParameter": {
+               "Value": {
+                  "OutputUUID": "5DB601AB-9094-45A4-8716-4D504582248F",
                   "Type": "ActionOutput",
                   "OutputName": "Nội dung của thư mục"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
-            "GroupingIdentifier": "DE097A50-AE5A-4E70-89E1-4DC7CB2998AE",
-            "WFControlFlowMode": 0
+            "WFContentItemLimitEnabled": false,
+            "WFContentItemSortProperty": "File Extension"
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "VariableName": "Repeat Item 2",
-                  "Type": "Variable"
+                  "OutputUUID": "28BB829D-E591-44AF-BAA3-422D5312AAFF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Tệp"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
-            "WFContentItemPropertyName": "Name",
-            "UUID": "DC116420-C6EE-46F5-A5A1-D2193410EB25"
+            "WFItemSpecifier": "First Item",
+            "UUID": "E6A10C49-BB89-4093-8E25-E4C49A068B23"
          }
       },
       {
@@ -1744,27 +1768,38 @@
                "Type": "Variable",
                "Variable": {
                   "Value": {
-                     "OutputUUID": "DC116420-C6EE-46F5-A5A1-D2193410EB25",
                      "Type": "ActionOutput",
-                     "OutputName": "Tên"
+                     "OutputName": "Mục từ danh sách",
+                     "OutputUUID": "E6A10C49-BB89-4093-8E25-E4C49A068B23",
+                     "Aggrandizements": [
+                        {
+                           "PropertyUserInfo": "WFItemName",
+                           "Type": "WFPropertyVariableAggrandizement",
+                           "PropertyName": "Name"
+                        }
+                     ]
                   },
                   "WFSerializationType": "WFTextTokenAttachment"
                }
             },
             "WFControlFlowMode": 0,
-            "UUID": "CBAAC96D-C303-4790-9316-BD547A0BA7A4",
             "WFConditionalActionString": "mussel",
-            "GroupingIdentifier": "F6C780D9-AE67-4CBC-9A11-2E145D245020",
+            "GroupingIdentifier": "A2F672F5-A2CD-40C5-97AE-41EF56F29A02",
             "WFCondition": 4
          }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+         "WFWorkflowActionParameters": {}
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "VariableName": "Repeat Item 2",
-                  "Type": "Variable"
+                  "OutputUUID": "E6A10C49-BB89-4093-8E25-E4C49A068B23",
+                  "Type": "ActionOutput",
+                  "OutputName": "Mục từ danh sách"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
@@ -1774,36 +1809,23 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
          "WFWorkflowActionParameters": {
-            "WFControlFlowMode": 2,
-            "GroupingIdentifier": "F6C780D9-AE67-4CBC-9A11-2E145D245020",
-            "UUID": "AA127BB7-4783-40A3-AC43-45C3FB2C5D71"
+            "GroupingIdentifier": "A2F672F5-A2CD-40C5-97AE-41EF56F29A02",
+            "WFControlFlowMode": 1
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
          "WFWorkflowActionParameters": {
             "WFInput": {
-               "Type": "Variable",
-               "Variable": {
-                  "Value": {
-                     "VariableName": "Repeat Item 2",
-                     "Type": "Variable",
-                     "Aggrandizements": [
-                        {
-                           "PropertyUserInfo": "WFFileExtensionProperty",
-                           "Type": "WFPropertyVariableAggrandizement",
-                           "PropertyName": "File Extension"
-                        }
-                     ]
-                  },
-                  "WFSerializationType": "WFTextTokenAttachment"
-               }
+               "Value": {
+                  "OutputUUID": "28BB829D-E591-44AF-BAA3-422D5312AAFF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Tệp"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
             },
-            "WFControlFlowMode": 0,
-            "UUID": "1B692FCA-D14C-4FCF-9C2B-41B630C4A9A0",
-            "WFConditionalActionString": "plist",
-            "GroupingIdentifier": "8A821347-2799-4FA6-AF74-85C53910E1AC",
-            "WFCondition": 4
+            "GroupingIdentifier": "4A9A844C-56A5-413E-B762-0C1D2E4E5B06",
+            "WFControlFlowMode": 0
          }
       },
       {
@@ -1815,7 +1837,7 @@
                   "string": "\uFFFC",
                   "attachmentsByRange": {
                      "{0, 1}": {
-                        "VariableName": "Repeat Item 2",
+                        "VariableName": "Repeat Item",
                         "Type": "Variable",
                         "Aggrandizements": [
                            {
@@ -1832,7 +1854,7 @@
                },
                "WFSerializationType": "WFTextTokenString"
             },
-            "UUID": "F6359948-17A6-4EF9-957F-C9C6FBFE0755"
+            "UUID": "4923204A-31A8-4830-8F2E-5D72331B2EAC"
          }
       },
       {
@@ -1842,28 +1864,29 @@
                "Type": "Variable",
                "Variable": {
                   "Value": {
-                     "OutputUUID": "F6359948-17A6-4EF9-957F-C9C6FBFE0755",
+                     "OutputUUID": "4923204A-31A8-4830-8F2E-5D72331B2EAC",
                      "Type": "ActionOutput",
-                     "OutputName": "Збіги"
+                     "OutputName": "Kết quả"
                   },
                   "WFSerializationType": "WFTextTokenAttachment"
                }
             },
             "WFControlFlowMode": 0,
-            "UUID": "F6E2AA39-D0D0-40B3-BEEE-F0A4D5CA8C15",
-            "WFConditionalActionString": "",
-            "GroupingIdentifier": "D8C40F5A-DA0C-4E8C-942A-31C2D42256B6",
+            "GroupingIdentifier": "1B83F55F-D064-4BD8-A092-161256B5E897",
             "WFCondition": 100
          }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+         "WFWorkflowActionParameters": {}
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "OutputUUID": "F6359948-17A6-4EF9-957F-C9C6FBFE0755",
-                  "Type": "ActionOutput",
-                  "OutputName": "Збіги"
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
@@ -1873,21 +1896,14 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
          "WFWorkflowActionParameters": {
-            "GroupingIdentifier": "D8C40F5A-DA0C-4E8C-942A-31C2D42256B6",
-            "WFControlFlowMode": 2
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "GroupingIdentifier": "8A821347-2799-4FA6-AF74-85C53910E1AC",
+            "GroupingIdentifier": "1B83F55F-D064-4BD8-A092-161256B5E897",
             "WFControlFlowMode": 2
          }
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
          "WFWorkflowActionParameters": {
-            "GroupingIdentifier": "DE097A50-AE5A-4E70-89E1-4DC7CB2998AE",
+            "GroupingIdentifier": "4A9A844C-56A5-413E-B762-0C1D2E4E5B06",
             "WFControlFlowMode": 2
          }
       },
@@ -1895,16 +1911,8 @@
          "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
          "WFWorkflowActionParameters": {
             "WFControlFlowMode": 2,
-            "GroupingIdentifier": "2A15D957-B372-45EA-8FF4-DDA74B999DF8",
-            "UUID": "B64EDD8E-ED6E-4A4B-94EE-8FDBEBA5DA5E"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-         "WFWorkflowActionParameters": {
-            "WFControlFlowMode": 2,
-            "GroupingIdentifier": "DD7667EB-2A44-4AED-A648-5990EA32109D",
-            "UUID": "5030BD2B-C44F-4E6C-A51F-3ACC79AADCE1"
+            "GroupingIdentifier": "A2F672F5-A2CD-40C5-97AE-41EF56F29A02",
+            "UUID": "7ABC63FD-0130-4ED1-BDEF-23EE14D797EB"
          }
       },
       {

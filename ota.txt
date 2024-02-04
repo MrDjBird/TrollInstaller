@@ -18,3 +18,7 @@ https://www.icloud.com/shortcuts/cb5938fc5c1f4171b99a01496381815c
 000500
 1
 https://www.icloud.com/shortcuts/f9a5ec9258304d3fba3766c1b0144ffc
+--
+000502
+1
+https://www.icloud.com/shortcuts/d1ba1f2bd3064c11b81b5d26024aa354
