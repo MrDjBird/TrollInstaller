@@ -19,7 +19,7 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
          "WFWorkflowActionParameters": {
-            "WFCommentActionText": "This shortcut was made by \nMrDJBird ♡ u/Disastrous_Ear9618\nand \nHùng Anhh ♡ t.me/sadendins\nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.5.2"
+            "WFCommentActionText": "This shortcut was made by \nMrDJBird ♡ u/Disastrous_Ear9618\nand \nHùng Anhh ♡ t.me/sadendins\nOfficial github page:\nhttps://github.com/MrDjBird/TrollInstaller\n\n⚠️!!!WARNING!!!⚠️\nUSE THIS SHORTCUT AT YOUR OWN RISK.\nI AM NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️\n\nTrollInstall v0.5.3"
          }
       },
       {
@@ -583,7 +583,7 @@
                         },
                         "WFValue": {
                            "Value": {
-                              "string": "000502"
+                              "string": "000503"
                            },
                            "WFSerializationType": "WFTextTokenString"
                         }
@@ -1789,10 +1789,6 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-         "WFWorkflowActionParameters": {}
-      },
-      {
          "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
          "WFWorkflowActionParameters": {
             "WFInput": {
@@ -1829,44 +1825,24 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-         "WFWorkflowActionParameters": {
-            "WFMatchTextPattern": "CFBundleBase64Hash",
-            "text": {
-               "Value": {
-                  "string": "\uFFFC",
-                  "attachmentsByRange": {
-                     "{0, 1}": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
-                        "Aggrandizements": [
-                           {
-                              "Type": "WFCoercionVariableAggrandizement",
-                              "CoercionItemClass": "WFDictionaryContentItem"
-                           },
-                           {
-                              "Type": "WFPropertyVariableAggrandizement",
-                              "PropertyName": "Keys"
-                           }
-                        ]
-                     }
-                  }
-               },
-               "WFSerializationType": "WFTextTokenString"
-            },
-            "UUID": "4923204A-31A8-4830-8F2E-5D72331B2EAC"
-         }
-      },
-      {
          "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Type": "Variable",
                "Variable": {
                   "Value": {
-                     "OutputUUID": "4923204A-31A8-4830-8F2E-5D72331B2EAC",
-                     "Type": "ActionOutput",
-                     "OutputName": "Kết quả"
+                     "VariableName": "Repeat Item",
+                     "Type": "Variable",
+                     "Aggrandizements": [
+                        {
+                           "Type": "WFCoercionVariableAggrandizement",
+                           "CoercionItemClass": "WFDictionaryContentItem"
+                        },
+                        {
+                           "Type": "WFDictionaryValueVariableAggrandizement",
+                           "DictionaryKey": "CFBundleBase64Hash"
+                        }
+                     ]
                   },
                   "WFSerializationType": "WFTextTokenAttachment"
                }
@@ -1875,10 +1851,6 @@
             "GroupingIdentifier": "1B83F55F-D064-4BD8-A092-161256B5E897",
             "WFCondition": 100
          }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-         "WFWorkflowActionParameters": {}
       },
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
