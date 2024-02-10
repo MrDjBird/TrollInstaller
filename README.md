@@ -1,5 +1,5 @@
 # TrollInstaller
- **More safely .ipa and .tipa installation with TrollStore 2**
+ **More safely .ipa and .tipa installer with [SeaShell](https://theapplewiki.com/wiki/SeaShell) protection**
  
  [Install latest v0.5.5](https://www.icloud.com/shortcuts/da9ebe87f99348798860d3389d648544)
 
