@@ -22,4 +22,4 @@
  - Shortcut settings
  - TrollStore URL Scheme
  - IPA sandboxing
- - [SeaShell](https://theapplewiki.com/SeaShell) disabling
+ - [SeaShell](https://theapplewiki.com/wiki/SeaShell) disabling
