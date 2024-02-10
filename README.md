@@ -11,6 +11,8 @@
 ## How it works?
  At the first, shortcut unzip IPA file, then check if the "mussel" file is inside or search for the `CFBundleBase64Hash` key in all ".plist" files.
 
+- [SeaShell iOS Malware](https://blog.entysec.com/2023-12-31-seashell-ios-malware/)
+
 ## To-do, list?
  - ~~OTA updates~~
  - ~~.plist file checking~~
@@ -20,4 +22,4 @@
  - Shortcut settings
  - TrollStore URL Scheme
  - IPA sandboxing
- - SeaShell disabling
+ - [SeaShell](https://theapplewiki.com/wiki/SeaShell) disabling
