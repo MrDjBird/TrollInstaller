@@ -3,7 +3,7 @@
  
  [Install latest v0.6.0](https://www.icloud.com/shortcuts/fed0bd9124fb4b458319131601716127)
 
- This shortcut was made by [u/Disastrous_Ear9618](https://www.reddit.com/user/Disastrous_Ear9618) and [u/Alive-Opinion-5453](https://www.reddit.com/user/Alive-Opinion-5453). 
+ This shortcut was made by [u/Disastrous_Ear9618](https://www.reddit.com/user/Disastrous_Ear9618) and [Hùng Anhh ♡](https://t.me/sadendins). 
 
 ***⚠️!!!WARNING!!!⚠️***\
 **WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS.**\
