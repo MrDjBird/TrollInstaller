@@ -1,7 +1,8 @@
 # TrollInstaller
  **More safely .ipa and .tipa installer with [SeaShell](https://theapplewiki.com/wiki/SeaShell) protection**
  
- [Install latest v0.6.0](https://www.icloud.com/shortcuts/fed0bd9124fb4b458319131601716127)
+ [Install latest release v0.6.0](https://www.icloud.com/shortcuts/fed0bd9124fb4b458319131601716127)
+ [Install latest beta v0.6.4](https://www.icloud.com/shortcuts/a8e5ca19b6e342bbb3e600808baf90af)
 
  This shortcut was made by [u/Disastrous_Ear9618](https://www.reddit.com/user/Disastrous_Ear9618) and [Hùng Anhh ♡](https://t.me/sadendins). 
 
@@ -19,7 +20,7 @@
  - ~~Large files supporting~~
  - ~~Install anyway option~~
  - ~~IP pulling~~
- - Shortcut settings
+ - ~~Shortcut settings~~
  - TrollStore URL Scheme
  - IPA sandboxing
  - [SeaShell](https://theapplewiki.com/wiki/SeaShell) disabling
