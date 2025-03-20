@@ -1,7 +1,7 @@
 # TrollInstaller
  **More safely .ipa and .tipa installer with [SeaShell](https://theapplewiki.com/wiki/SeaShell) protection**
  
- [Install latest release v0.6.0](https://www.icloud.com/shortcuts/fed0bd9124fb4b458319131601716127)
+ [Install latest release v0.6.5](https://2ly.link/25ffA)
 
  [Install latest beta v0.6.4](https://www.icloud.com/shortcuts/a8e5ca19b6e342bbb3e600808baf90af)
 
@@ -16,12 +16,6 @@
 - [SeaShell iOS Malware](https://blog.entysec.com/2023-12-31-seashell-ios-malware/)
 
 ## To-do, list
- - ~~OTA updates~~
- - ~~.plist file checking~~
- - ~~Large files supporting~~
- - ~~Install anyway option~~
- - ~~IP pulling~~
- - ~~Shortcut settings~~
- - TrollStore URL Scheme
  - IPA sandboxing
  - [SeaShell](https://theapplewiki.com/wiki/SeaShell) disabling
+ - IPA repacking
