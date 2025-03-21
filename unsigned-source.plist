@@ -18,12 +18,13 @@ and
 Hùng Anhh ♡ t.me/sadendins
 Official github page:
 https://github.com/MrDjBird/TrollInstaller
-
 ⚠️!!!WARNING!!!⚠️
 WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. 
 ⚠️!!!WARNING!!!⚠️
 
-TrollInstall v0.6.5</string>
+TrollInstall v0.6.6
+Change log:
+- New language file system with OTA updates</string>
 			</dict>
 		</dict>
 		<dict>
@@ -59,7 +60,7 @@ TrollInstall v0.6.5</string>
 									<key>Value</key>
 									<dict>
 										<key>string</key>
-										<string>000605</string>
+										<string>000606</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -190,122 +191,6 @@ TrollInstall v0.6.5</string>
 					<key>WFSerializationType</key>
 					<string>WFDictionaryFieldValue</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>LanguageRawText</string>
-				<key>UUID</key>
-				<string>F611C3D4-1C3C-4CDE-B98E-4DBEFB90A668</string>
-				<key>WFTextActionText</key>
-				<string>{
-  "uk-UA": {
-    "joinrisks": "Приєднуйтесь, я приймаю всі ризики✅",
-    "yesupdate": "Так, звісно✅",
-    "showip": "Показати IP адресу🔎",
-    "newupdate": "Є нове оновлення!Хочете встановити?",
-    "install": "Встановити (TrollStore)📥",
-    "close": "Закрити ❌ ",
-    "share": "Поширити📨",
-    "leavebeta": "Відключити, я хочу отримувати тільки релізи⛔️",
-    "nostop": "Ні, зупинити команду❌",
-    "seashell": "⛔️Виявлено зловмисне програмне забезпечення Seashell⛔️",
-    "selectfile": "Вибрати файл💾",
-    "yes": "Так✅",
-    "nostay": "Ні, я залишуся❌",
-    "leavebetawarning": "Ви вже приєднані до бета-тесту🛠️. Бажаєте відключитись?",
-    "important": "Ваша версія потребує оновлення⬆️",
-    "noprefer": "Ні, зберегти мою версію❌",
-    "installanyway": "Встановити в будь якому разі💀",
-    "noseashell": "✅Seashell не виявлено ✅",
-    "joinbetawarning": "Якщо ви приєднаєтесь до бета-тесту, ви отримаєте нестабільну версію нашої швидкої команди. ⚠️!!!ПОПЕРЕДЖЕННЯ!!!⚠️ МИ НЕ НЕСЕМО ВІДПОВІДАЛЬНОСТІ ЗА БУДЬ-ЯКІ ПОШКОДЖЕННЯ АБО ПОМИЛКОВІ ВИЯВЛЕННЯ.  ⚠️!!!ПОПЕРЕДЖЕННЯ!!!⚠️",
-    "mainmenu": "Головне меню📊",
-    "nowlan": "У вас немає підключення до WLAN мережі. Через використання стільникових данних може стягуватись оплата. Бажаєте використаи стільникові данні?",
-    "clipboard": "Буфер обміну(Файл або Посилання)📋",
-    "betasettings": "Налаштування бета тестування🛠️",
-    "settings": "Налаштування⚙️",
-    "language": "Мова🌍",
-    "Updates⏫": "Оновлення⏫",
-    "Enabled✅": "Увімкнено✅",
-    "Disabled❌": "Вимкнено❌",
-    "CorruptedSave📛": "Ваші збереженні параметри пошкоджені пошкоджені або з новішої версії TrollInstaler-у.",
-    "Recreate♻️": "Скинути параметри📑♻️(рекомендовано)",
-    "GetNew⬆️": "Оновити TrollInstaller⬆️",
-    "visitgitℹ️": "Переглянути GitHubℹ️"
-  },
-  "vi-VN": {
-    "joinrisks": "Tham gia, tôi chấp nhận mọi rủi ro ✅",
-    "yesupdate": "Có, chắc chắn rồi ✅",
-    "showip": "Hiển thị IP🔎",
-    "newupdate": "Có phiên bản mới ! Bạn có muốn cập nhật không ? ",
-    "install": "Cài đặt 📥",
-    "close": "Đóng ❌",
-    "share": "Chia sẻ (TrollStore)📨",
-    "leavebeta": "Rời đi, tôi chỉ muốn nhận các bản phát hành ⛔️",
-    "nostop": "Không, dừng lệnh ❌",
-    "seashell": "⛔️ Đã phát hiện phần mềm độc hại Seashell ⛔️",
-    "selectfile": "Chọn tệp 💾",
-    "yes": "Đúng ✅",
-    "nostay": "Không, tôi ở lại ❌",
-    "leavebetawarning": "Bạn đã tham gia thử nghiệm beta 🛠️. Bạn muốn rời đi?",
-    "important": "Bản cập nhật quan trọng",
-    "noprefer": "Không, giữ phiên bản này ❌",
-    "installanyway": "Vẫn cài đặt 💀",
-    "noseashell": "✅ Không phát hiện phần mềm độc hại Seashell ✅",
-    "joinbetawarning": "Nếu bạn tham gia thử nghiệm beta, bạn sẽ nhận được phiên bản phím tắt không ổn định của chúng tôi. ⚠️!!!CẢNH BÁO!!!⚠️ CHÚNG TÔI KHÔNG CHỊU TRÁCH NHIỆM VỀ BẤT KỲ THIỆT HẠI HAY PHÁT HIỆN SAI LẦM NÀO. ⚠️!!!CẢNH BÁO!!!⚠️",
-    "mainmenu": "Menu chính 📊",
-    "nowlan": "Bạn không có kết nối Wifi, sử dụng mạng di động có thể hao tốn dung lượng hơn. Vẫn dùng mạng di động chứ ?",
-    "clipboard": "Bảng nhớ tạm (Tệp hoặc liên kết) 📋",
-    "betasettings": "Cài đặt thử nghiệm beta 🛠️",
-    "settings": "Cài đặt⚙️",
-    "language": "Ngôn ngữ🌏",
-    "Updates⏫": "",
-    "Enabled✅": "",
-    "Disabled❌": "",
-    "CorruptedSave📛": "",
-    "Recreate♻️": "",
-    "GetNew⬆️": "",
-    "visitgitℹ️": ""
-  },
-  "en-GB": {
-    "joinrisks": "Join, I accept all risks✅",
-    "yesupdate": "Yes, sure✅",
-    "showip": "Show IP🔎",
-    "newupdate": "New update available. Update?",
-    "install": "Install (TrollStore)📥",
-    "close": "Close shortcut❌",
-    "share": "Share 📨",
-    "leavebeta": "Leave, i wanna recive only releases⛔️",
-    "nostop": "No, stop shortcut❌",
-    "seashell": "💀⚠️Seashell malware detected⚠️💀",
-    "selectfile": "Select file💾",
-    "yes": "Yes✅",
-    "nostay": "No, I stay❌",
-    "leavebetawarning": "You are already joined to beta test🛠️. Do you want to leave?",
-    "important": "Very important update needed",
-    "noprefer": "No, I prefer my version❌",
-    "installanyway": "Install anyway 💀",
-    "noseashell": "✅ Seashell malware was not detected ✅",
-    "joinbetawarning": "If you join beta test you will receive unstable version of our shortcut. \n⚠️!!!WARNING!!!⚠️\nWE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️",
-    "mainmenu": "Main menu📊",
-    "nowlan": "You haven't valid WLAN. Using cellular may cause extra payment. Use cellular?",
-    "clipboard": "Clipboard(File or Link)📋",
-    "betasettings": "Beta test🧪🛠️",
-    "settings": "Settings⚙️",
-    "language": "Language🌎",
-    "Updates⏫": "Updates⏫",
-    "Enabled✅": "Enabled✅",
-    "Disabled❌": "Disabled❌",
-    "CorruptedSave📛": "Your saved preferences are corrupted or from newer version of TrollInstaller.",
-    "Recreate♻️": "Recreate save file📑♻️(recommended)",
-    "GetNew⬆️": "Update TrollInstaller⬆️",
-    "visitgitℹ️": "Visit GitHubℹ️"
-  }
-}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1381,6 +1266,8 @@ TrollInstall v0.6.5</string>
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>25CC9998-A79D-4137-AA6A-873747ECC250</string>
+				<key>UUID</key>
+				<string>10CF2AF8-5BDC-45D3-A9A4-76EFECEB473B</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -1505,6 +1392,283 @@ TrollInstall v0.6.5</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.open</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>32D4760F-1630-4D93-8E0C-4E89FC7A0EDC</string>
+				<key>WFFile</key>
+				<dict>
+					<key>displayName</key>
+					<string>TrollInstaller</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>LocalStorage</string>
+						<key>crossDeviceItemID</key>
+						<string>deviceSpecific:43EFCF4C-0433-45C6-A7E6-B4322D5239BE:fp:/wclJpzeTO+SjrsvknULkphB+HL02DL3fT7EuJDiRi1k=/com.apple.FileProvider.LocalStorage//fid=37492442</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.FileProvider.LocalStorage</string>
+						<key>relativeSubpath</key>
+						<string>TrollInstaller</string>
+					</dict>
+					<key>filename</key>
+					<string>TrollInstaller</string>
+				</dict>
+				<key>WFFileErrorIfNotFound</key>
+				<false/>
+				<key>WFGetFilePath</key>
+				<string>lang.json</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>A0176386-0DC6-4416-9805-A0E7484388A8</string>
+				<key>UUID</key>
+				<string>7BAF211A-9F3E-4A1E-9AE0-F627DBF80932</string>
+				<key>WFCondition</key>
+				<integer>101</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Файл</string>
+							<key>OutputUUID</key>
+							<string>32D4760F-1630-4D93-8E0C-4E89FC7A0EDC</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>8A1F811E-F535-4EB9-AF23-A575B7A4FE5E</string>
+				<key>WFTextActionText</key>
+				<string>{
+  "uk-UA": {
+    "languagename": "УкраЇнська🇺🇦",
+    "joinrisks": "Приєднуйтесь, я приймаю всі ризики✅",
+    "yesupdate": "Так, звісно✅",
+    "showip": "Показати IP адресу🔎",
+    "newupdate": "Є нове оновлення!Хочете встановити?",
+    "install": "Встановити (TrollStore)📥",
+    "close": "Закрити ❌ ",
+    "share": "Поширити📨",
+    "leavebeta": "Відключити, я хочу отримувати тільки релізи⛔️",
+    "nostop": "Ні, зупинити команду❌",
+    "seashell": "⛔️Виявлено зловмисне програмне забезпечення Seashell⛔️",
+    "selectfile": "Вибрати файл💾",
+    "yes": "Так✅",
+    "nostay": "Ні, я залишуся❌",
+    "leavebetawarning": "Ви вже приєднані до бета-тесту🛠️. Бажаєте відключитись?",
+    "important": "Ваша версія потребує оновлення⬆️",
+    "noprefer": "Ні, зберегти мою версію❌",
+    "installanyway": "Встановити в будь якому разі💀",
+    "noseashell": "✅Seashell не виявлено ✅",
+    "joinbetawarning": "Якщо ви приєднаєтесь до бета-тесту, ви отримаєте нестабільну версію нашої швидкої команди. ⚠️!!!ПОПЕРЕДЖЕННЯ!!!⚠️ МИ НЕ НЕСЕМО ВІДПОВІДАЛЬНОСТІ ЗА БУДЬ-ЯКІ ПОШКОДЖЕННЯ АБО ПОМИЛКОВІ ВИЯВЛЕННЯ.  ⚠️!!!ПОПЕРЕДЖЕННЯ!!!⚠️",
+    "mainmenu": "Головне меню📊",
+    "nowlan": "У вас немає підключення до WLAN мережі. Через використання стільникових данних може стягуватись оплата. Бажаєте використаи стільникові данні?",
+    "clipboard": "Буфер обміну(Файл або Посилання)📋",
+    "betasettings": "Налаштування бета тестування🛠️",
+    "settings": "Налаштування⚙️",
+    "language": "Мова🌍",
+    "Updates⏫": "Оновлення⏫",
+    "Enabled✅": "Увімкнено✅",
+    "Disabled❌": "Вимкнено❌",
+    "CorruptedSave📛": "Ваші збереженні параметри пошкоджені пошкоджені або з новішої версії TrollInstaler-у.",
+    "Recreate♻️": "Скинути параметри📑♻️(рекомендовано)",
+    "GetNew⬆️": "Оновити TrollInstaller⬆️",
+    "visitgitℹ️": "Переглянути GitHubℹ️"
+  },
+  "vi-VN": {
+    "languagename": "Tiếng Việt🇻🇳",
+    "joinrisks": "Tham gia, tôi chấp nhận mọi rủi ro ✅",
+    "yesupdate": "Có, chắc chắn rồi ✅",
+    "showip": "Hiển thị IP🔎",
+    "newupdate": "Có phiên bản mới! Bạn có muốn cập nhật không?",
+    "install": "Cài đặt 📥",
+    "close": "Đóng ❌",
+    "share": "Chia sẻ (TrollStore)📨",
+    "leavebeta": "Rời đi, tôi chỉ muốn nhận các bản phát hành ⛔️",
+    "nostop": "Không, dừng lệnh ❌",
+    "seashell": "⛔️ Đã phát hiện phần mềm độc hại Seashell ⛔️",
+    "selectfile": "Chọn tệp 💾",
+    "yes": "Đúng ✅",
+    "nostay": "Không, tôi ở lại ❌",
+    "leavebetawarning": "Bạn đã tham gia thử nghiệm beta 🛠️. Bạn muốn rời đi?",
+    "important": "Bản cập nhật quan trọng",
+    "noprefer": "Không, giữ phiên bản này ❌",
+    "installanyway": "Vẫn cài đặt 💀",
+    "noseashell": "✅ Không phát hiện phần mềm độc hại Seashell ✅",
+    "joinbetawarning": "Nếu bạn tham gia thử nghiệm beta, bạn sẽ nhận được phiên bản phím tắt không ổn định của chúng tôi. ⚠️!!!CẢNH BÁO!!!⚠️ CHÚNG TÔI KHÔNG CHỊU TRÁCH NHIỆM VỀ BẤT KỲ THIỆT HẠI HAY PHÁT HIỆN SAI LẦM NÀO. ⚠️!!!CẢNH BÁO!!!⚠️",
+    "mainmenu": "Menu chính 📊",
+    "nowlan": "Bạn không có kết nối Wifi, sử dụng mạng di động có thể hao tốn dung lượng hơn. Vẫn dùng mạng di động chứ?",
+    "clipboard": "Bảng nhớ tạm (Tệp hoặc liên kết) 📋",
+    "betasettings": "Cài đặt thử nghiệm beta 🛠️",
+    "settings": "Cài đặt⚙️",
+    "language": "Ngôn ngữ🌏",
+    "Updates⏫": "Cập nhật⏫",
+    "Enabled✅": "Đã bật✅",
+    "Disabled❌": "Đã tắt❌",
+    "CorruptedSave📛": "Tệp lưu trữ của bạn bị hỏng hoặc đến từ phiên bản mới hơn của TrollInstaller.",
+    "Recreate♻️": "Tạo lại tệp lưu trữ📑♻️ (khuyến nghị)",
+    "GetNew⬆️": "Cập nhật TrollInstaller⬆️",
+    "visitgitℹ️": "Truy cập GitHubℹ️"
+  },
+  "en-GB": {
+    "languagename": "English🇬🇧",
+    "joinrisks": "Join, I accept all risks✅",
+    "yesupdate": "Yes, sure✅",
+    "showip": "Show IP🔎",
+    "newupdate": "New update available. Update?",
+    "install": "Install (TrollStore)📥",
+    "close": "Close shortcut❌",
+    "share": "Share 📨",
+    "leavebeta": "Leave, i wanna recive only releases⛔️",
+    "nostop": "No, stop shortcut❌",
+    "seashell": "💀⚠️Seashell malware detected⚠️💀",
+    "selectfile": "Select file💾",
+    "yes": "Yes✅",
+    "nostay": "No, I stay❌",
+    "leavebetawarning": "You are already joined to beta test🛠️. Do you want to leave?",
+    "important": "Very important update needed",
+    "noprefer": "No, I prefer my version❌",
+    "installanyway": "Install anyway 💀",
+    "noseashell": "✅ Seashell malware was not detected ✅",
+    "joinbetawarning": "If you join beta test you will receive unstable version of our shortcut. \n⚠️!!!WARNING!!!⚠️\nWE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR MISDETECTIONS. \n⚠️!!!WARNING!!!⚠️",
+    "mainmenu": "Main menu📊",
+    "nowlan": "You haven't valid WLAN. Using cellular may cause extra payment. Use cellular?",
+    "clipboard": "Clipboard(File or Link)📋",
+    "betasettings": "Beta test🧪🛠️",
+    "settings": "Settings⚙️",
+    "language": "Language🌎",
+    "Updates⏫": "Updates⏫",
+    "Enabled✅": "Enabled✅",
+    "Disabled❌": "Disabled❌",
+    "CorruptedSave📛": "Your saved preferences are corrupted or from newer version of TrollInstaller.",
+    "Recreate♻️": "Recreate save file📑♻️(recommended)",
+    "GetNew⬆️": "Update TrollInstaller⬆️",
+    "visitgitℹ️": "Visit GitHubℹ️"
+  }
+}
+</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.save</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>7751B4A3-3B99-40B0-95E7-9275E61E8116</string>
+				<key>WFAskWhereToSave</key>
+				<false/>
+				<key>WFFileDestinationPath</key>
+				<string>lang</string>
+				<key>WFFolder</key>
+				<dict>
+					<key>displayName</key>
+					<string>TrollInstaller</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>LocalStorage</string>
+						<key>crossDeviceItemID</key>
+						<string>deviceSpecific:43EFCF4C-0433-45C6-A7E6-B4322D5239BE:fp:/wclJpzeTO+SjrsvknULkphB+HL02DL3fT7EuJDiRi1k=/com.apple.FileProvider.LocalStorage//fid=37492442</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.FileProvider.LocalStorage</string>
+						<key>relativeSubpath</key>
+						<string>TrollInstaller</string>
+					</dict>
+					<key>filename</key>
+					<string>TrollInstaller</string>
+				</dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFDictionaryContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Текст</string>
+						<key>OutputUUID</key>
+						<string>8A1F811E-F535-4EB9-AF23-A575B7A4FE5E</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFSaveFileOverwrite</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.dictionary</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>Languages</string>
+				<key>UUID</key>
+				<string>7207C17C-8514-4877-8C54-F4D1731F1426</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Текст</string>
+						<key>OutputUUID</key>
+						<string>8A1F811E-F535-4EB9-AF23-A575B7A4FE5E</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>A0176386-0DC6-4416-9805-A0E7484388A8</string>
+				<key>UUID</key>
+				<string>20EC0809-B7CD-4A62-B832-7D526AA00D08</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.detect.dictionary</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -1517,15 +1681,28 @@ TrollInstall v0.6.5</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>LanguageRawText</string>
+						<string>Файл</string>
 						<key>OutputUUID</key>
-						<string>F611C3D4-1C3C-4CDE-B98E-4DBEFB90A668</string>
+						<string>32D4760F-1630-4D93-8E0C-4E89FC7A0EDC</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>A0176386-0DC6-4416-9805-A0E7484388A8</string>
+				<key>UUID</key>
+				<string>16354E76-BAD9-4ACF-A547-DC171938514E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -1547,9 +1724,9 @@ TrollInstall v0.6.5</string>
 							</dict>
 						</array>
 						<key>OutputName</key>
-						<string>Languages</string>
+						<string>Якщо результат</string>
 						<key>OutputUUID</key>
-						<string>3A608158-370F-49D3-9D98-B19BC756D17F</string>
+						<string>16354E76-BAD9-4ACF-A547-DC171938514E</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1831,9 +2008,9 @@ TrollInstall v0.6.5</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Languages</string>
+						<string>Якщо результат</string>
 						<key>OutputUUID</key>
-						<string>3A608158-370F-49D3-9D98-B19BC756D17F</string>
+						<string>16354E76-BAD9-4ACF-A547-DC171938514E</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1907,9 +2084,9 @@ TrollInstall v0.6.5</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Languages</string>
+						<string>Якщо результат</string>
 						<key>OutputUUID</key>
-						<string>3A608158-370F-49D3-9D98-B19BC756D17F</string>
+						<string>16354E76-BAD9-4ACF-A547-DC171938514E</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2005,9 +2182,9 @@ TrollInstall v0.6.5</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Languages</string>
+						<string>Якщо результат</string>
 						<key>OutputUUID</key>
-						<string>3A608158-370F-49D3-9D98-B19BC756D17F</string>
+						<string>16354E76-BAD9-4ACF-A547-DC171938514E</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2157,6 +2334,158 @@ TrollInstall v0.6.5</string>
 						<string>WFTextTokenAttachment</string>
 					</dict>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>24D5970C-A981-4DED-BAFD-00AD047CAA96</string>
+				<key>WFURL</key>
+				<string>https://raw.githubusercontent.com/MrDjBird/TrollInstaller/refs/heads/main/lang.json</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6DB2428-7393-456E-BB95-D3B686B3C360</string>
+				<key>UUID</key>
+				<string>1EDB36EF-325E-420D-9A0E-A329088FA29D</string>
+				<key>WFCondition</key>
+				<integer>5</integer>
+				<key>WFConditionalActionString</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFStringContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Вміст URL-адреси</string>
+								<key>OutputUUID</key>
+								<string>24D5970C-A981-4DED-BAFD-00AD047CAA96</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>CoercionItemClass</key>
+									<string>WFStringContentItem</string>
+									<key>Type</key>
+									<string>WFCoercionVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>OutputName</key>
+							<string>Файл</string>
+							<key>OutputUUID</key>
+							<string>32D4760F-1630-4D93-8E0C-4E89FC7A0EDC</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.save</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>AD949839-F300-4135-A8D7-42C4578CE500</string>
+				<key>WFAskWhereToSave</key>
+				<false/>
+				<key>WFFileDestinationPath</key>
+				<string>lang</string>
+				<key>WFFolder</key>
+				<dict>
+					<key>displayName</key>
+					<string>TrollInstaller</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>LocalStorage</string>
+						<key>crossDeviceItemID</key>
+						<string>deviceSpecific:43EFCF4C-0433-45C6-A7E6-B4322D5239BE:fp:/wclJpzeTO+SjrsvknULkphB+HL02DL3fT7EuJDiRi1k=/com.apple.FileProvider.LocalStorage//fid=37492442</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.FileProvider.LocalStorage</string>
+						<key>relativeSubpath</key>
+						<string>TrollInstaller</string>
+					</dict>
+					<key>filename</key>
+					<string>TrollInstaller</string>
+				</dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFDictionaryContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Вміст URL-адреси</string>
+						<key>OutputUUID</key>
+						<string>24D5970C-A981-4DED-BAFD-00AD047CAA96</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFSaveFileOverwrite</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6DB2428-7393-456E-BB95-D3B686B3C360</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>

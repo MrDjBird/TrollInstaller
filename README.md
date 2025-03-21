@@ -1,7 +1,7 @@
 # TrollInstaller
  **More safely .ipa and .tipa installer with [SeaShell](https://theapplewiki.com/wiki/SeaShell) protection**
  
- [Install latest release v0.6.5](https://2ly.link/25ffA)
+ [Install latest release v0.6.6](https://2ly.link/25kqN)
 
  [Install latest beta v0.6.4](https://www.icloud.com/shortcuts/a8e5ca19b6e342bbb3e600808baf90af)
 
